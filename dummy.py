@@ -54,6 +54,7 @@ def main():
     s_text = summary  # Placeholder for summarized text
     text_list = list(s_text)  # Convert the generator to a list
     s_text = " ".join(text_list)
+    
     with st.expander("Listen to Your Summarized Text", expanded=False):
         summarized_text = s_text
         voice_select = st.selectbox("Select Voice", ["Joanna", "Matthew", "Emma"], key="voice_for_summary")  # Add unique key
